@@ -1,4 +1,5 @@
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import styles from './App.module.scss';
 import CustomerRoutes from '../Routes/CustomerRoutes';
 import { useAppSelector } from 'src/service/hooks';
@@ -19,6 +20,7 @@ function App() {
         <SellerRoutes />
       )}
       {isAuthModalOpen && <AuthModal />}
+      <Footer/>
     </div>
   );
 }
